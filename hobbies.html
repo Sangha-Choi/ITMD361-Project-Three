@@ -1,26 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8" />
-<title>Education and Hobbies</title>
-<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Education and Hobbies</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <header>
+        <nav id=navbar>
+            <ul>
+                <li><a href="index.html">Index Page</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+            </ul>
+        </nav>
+    </header>
     
-     <div id="navigationbar">
-        <ul id=nav>
-            <li><a href="index.html" title="index">Index Page</a></li>
-            <li><a href="resume.html" title="Professional Resume">Professional Resume</a></li>
-        </ul>
-    </div>
-    
-        
-<!--        <iframe width="640" height="360" src="https://youtu.be/d4qDdf-fX60?rel=0&vq=hd1080" frameborder="0" allowfullscreen></iframe>-->
+    <h1>John Chiodo's Hobbies</h1>
+    <section id="limetech">
+        <p>
+        I like to build home PCs, my latest was a NAS
+        <a href="https://en.wikipedia.org/wiki/Network-attached_storage"
+        target="_blank">(wiki: Network Attached Storage)</a>, 
+        which I am using to store media, PC backups, etc.
+        </p>
+        <p>
+        You can purchase a compeletly working NAS off the shelf, but what is the fun in that? 
+        Ther are many options if you want to make one yourself. I choose 
+        UNraid from <a href="https://lime-technology.com/" target="_blank"> lime-technologies</a>. 
+        </p>
+        <h3>Few reasons I chose Unraid</h3>
+            <ul>
+                <li>Can run on older hardware.</li>
+                <li>Can expand easily with different size drives.</li>
+                <li>Supports single and dual parity protection.</li>
+                <li>Support virtualization and Docker containers.</li>
+            </ul>
+        <p>
+        Unraid offers more than basic storage, checkout it out the videos below:</p>
+        <section id=limevideos>
+            <!--Show 3 videos: UNraid features, PC installation and MAC installation
+            Using the name/id/target with iframe, each link will display a separate video.
+            allowfullscreen as some of the text on the videos is to small to view
+            in default window size-->
+            <iframe width="640" height="360" name="limebox" id="limebox"
+                    src="https://www.youtube.com/embed/d4qDdf-fX60?rel=0&vq=hd1080" 
+                    frameborder="0" allowfullscreen>
+                <p>Your browser does not support iframes. You an access the videos 
+                    by clicking lime-technologies link above.</p>
+            </iframe>
+            <a href="https://www.youtube.com/embed/d4qDdf-fX60?rel=0&vq=hd1080" target=limebox>
+                See UNraids many features...</a>
+            <a href="https://www.youtube.com/embed/hmfJg9KifS8?rel=0&vq=hd1080" target=limebox>
+                Easy installation instruction for PC...</a>
+            <a href="https://www.youtube.com/embed/9q7DmsGAaFk?rel=0&vq=hd1080" target=limebox>
+                Easy installation instruction for MAC...</a>
+        </section>
+    </section>
+    <section id=future>        
+    <h3>Other future uses for my UNraid NAS:</h3>
+        <ul>
+            <li>Virtualize Win10 and CentOS linux box for general
+                websurfing, etc. 
+            </li>
+            <li>Virtualize a Plex Media Server so I can watch my 
+                media content on any network capable device in the 
+                house.
+            </li>
+            <li>Virtualize a Win10 box with graphics card for PC gaming.</li>
+        </ul>      
+    </section>    
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/d4qDdf-fX60?rel=0&vq=hd1080" frameborder="0" allowfullscreen></iframe>
-	
 
- 
+    <footer>
+        <p> Created by John Chiodo</p>
+        <address>
+            <p><a href="mailto:jchiodo@hawk.iit.edu">jchiodo@hawk.iit.edu</a></p>
+        </address>
+    </footer>        
 </body>
-
 </html><!-- will hold hobbies, interests, and projects -->

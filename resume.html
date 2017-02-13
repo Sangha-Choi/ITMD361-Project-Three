@@ -1,33 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8" />
-<title>Professional Resume</title>
-<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Professional Resume</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
-	
 <body>
     
-    <div id="navigationbar">
-        <ul id=nav>
-            <li><a href="index.html" title="index">Index Page</a></li>
-            <li><a href="hobbies.html" title="Hobbies">Hobbies</a></li>
-        </ul>
-    </div>
+    <header>
+        <nav id=navbar>
+            <ul>
+                <li><a href="index.html">Index Page</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+            </ul>
+        </nav>
+    </header>
     
-    
+    <h1>John Chiodo's Online Resume</h1>
     <section id="personalinfo">
-    <h2>Personal Information</h2>
-        <p>
-        John Chiodo<br>
-        Aurora, IL. 60504<br>
-        jchiodo5804@gmail.com<br>
-        (630) 555-1212
-        </p>
-    </section>
+        <h2>Personal Information</h2>
+         <p>John Chiodo</p>
+         <p>Aurora, IL. 60504</p>
+         <p>jchiodo5804@gmail.com</p>
+         <p>(630) 555-1212</p>
+         <p><a href="">Linkedin Page</a></p>
+    </section> <!--end personalinfo section-->
+    
     <section id="skillSummary">
-	<h2>Skill Summary</h2>
-		<ul>
+        <h2>Skill Summary</h2>
+        <ul> <!--Planning to this rework skill list in table like format with CSS-->
             <li>Functional Requirements testing</li>
             <li>Test Plans and Cases</li>
             <li>Scripting and Documentation</li>
@@ -38,7 +40,7 @@
             <li>Defect/Bug Tracking</li>
             <li>Tool development</li>
         </ul>
-	</section>
+	</section> <!--end skillsummary section-->
 
     <h1>Professional Experience</h1>
     <section id=HCL>
@@ -48,7 +50,7 @@
         <div id="HCL_date">
             <h3>EVDO Network Level Testing (NLT) – 2011-present</h3>
         </div> 
-        <div id="HCL_experience1">
+        <div id="HCL_workexp">
             <ul>
                 <li>EVDO Call model Development – Developed, maintained and executed NLT 1xEV-DO call
                 loads testing using in-house call load generators to mimic customer field offices.
@@ -59,16 +61,19 @@
                 <li>Maintain call load generators servers on virtual servers.</li>
             </ul>
         </div>
-    </section>
+    </section> <!--end HCL -->
     
     <section id="ALU">
         <div id=ALU_name>
-        <h2>Alcatel-Lucent Technologies</h2>
+        <h2>AT&amp;T - Alcatel-Lucent Technologies</h2>
         </div>
         <div id="ALU_date1">
-            <h3>1xEV-DO Applications (Qchat and VOIP) Software Development and Testing – 2004-2011</h3>
+            <h3>
+                1xEV-DO Applications (Qchat and VOIP) Software Development and 
+                Testing – 2004-2011
+            </h3>
         </div>
-        <div id="ALU_experience1">
+        <div id="ALU_workexp1">
              <ul>
                  <li>
                      Capacity, Performance and Resiliency (CPR) testing for 1xEV-DO product:  Created 
@@ -112,16 +117,18 @@
         <div id="ALU_date2">
             <h3>Database Software Development – 1995-2004</h3>
         </div>
-        <div id="ALU_experience2"> 
+        <div id="ALU_workexp2"> 
              <ul>
-                 <li>Developed code  targeted for  Lucent Technologies wireless database application on 
-                     the radio network controller. Using C and shell programming languages, delivered 
-                     functional and tested code modules overall generic software load.
+                 <li>Developed code  targeted for  Lucent Technologies wireless database application
+                     on the radio network controller. Using C and shell programming languages, delivered functional and tested code modules overall generic software load.
                  </li>
                  <li>
                     <ul>
                         <li>Coding database functions from requirements</li>
-                        <li>Extensive testing of modules delivered and support for future testing efforts.</li>
+                        <li>
+                            Extensive testing of modules delivered and support for future 
+                            testing efforts.
+                        </li>
                     </ul>
                  </li>
                  <li>Assisted in the development and testing a platform load tester for automated 
@@ -129,11 +136,16 @@
                  </li>
             </ul>
         </div>
-        
-        <div id="ALU_date3">
+    </section> <!--end ATT -ALU-->
+    
+    <section id="ATT">
+        <div id=ATT_name>
+            <h2>AT&amp;T</h2>
+        </div>
+        <div id="AT&amp;T_date">
             <h3>Hardware Design and Testing – 1987-1995</h3>
         </div>
-        <div id="ALU_experience3"> 
+        <div id="AT&amp;T_workexp"> 
              <ul>
                  <li>5ESS flash card design and simulation - Design and simulation of flash card technology 
                      in 5ESS product.
@@ -159,7 +171,15 @@
                  </li>
             </ul>
         </div> 
-    </section>
+    </section> <!--end ATT-->
+    
+    <footer>
+        <p> Created by John Chiodo</p>
+        <address>
+            <p><a href="mailto:jchiodo@hawk.iit.edu">jchiodo@hawk.iit.edu</a></p>
+        </address>
+    </footer>
+    
 </body>
 </html>
 

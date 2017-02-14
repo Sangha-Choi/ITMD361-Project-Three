@@ -6,7 +6,8 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
+    
+    <header> <!--Navigation bar-->
         <nav id=navbar>
             <ul>
                 <li><a href="index.html">Index Page</a></li>
@@ -19,45 +20,44 @@
     <h1>John Chiodo's Hobbies</h1>
     <section id="limetech">
         <p>
-        I like to build home PCs, my latest was a NAS
-        <a href="https://en.wikipedia.org/wiki/Network-attached_storage"
-        target="_blank">(wiki: Network Attached Storage)</a>, 
-        which I am using to store media, PC backups, etc.
+            I like to build home PCs, my latest was a NAS 
+            <a href="https://en.wikipedia.org/wiki/Network-attached_storage"target="_blank"> 
+            wiki: Network Attached Storage)</a>, which I am using to store media, 
+            PC backups, etc.
         </p>
         <p>
-        You can purchase a compeletly working NAS off the shelf, but what is the fun in that? 
-        Ther are many options if you want to make one yourself. I choose 
-        UNraid from <a href="https://lime-technology.com/" target="_blank"> lime-technologies</a>. 
+            You can purchase a compeletly working NAS off the shelf, but what is the fun in that? 
+            There are many options if you want to make one yourself. I choose UNraid from 
+            <a href="https://lime-technology.com/" target="_blank"> lime-technologies</a>. 
         </p>
-        <h3>Few reasons I chose Unraid</h3>
+        <h3>Main reasons I chose Unraid</h3>
             <ul>
                 <li>Can run on older hardware.</li>
                 <li>Can expand easily with different size drives.</li>
                 <li>Supports single and dual parity protection.</li>
                 <li>Support virtualization and Docker containers.</li>
             </ul>
-        <p>
-        Unraid offers more than basic storage, checkout it out the videos below:</p>
+        
         <section id=limevideos>
-            <!--Show 3 videos: UNraid features, PC installation and MAC installation
-            Using the name/id/target with iframe, each link will display a separate video.
-            allowfullscreen as some of the text on the videos is to small to view
-            in default window size-->
-            <iframe width="640" height="360" name="limebox" id="limebox"
-                    src="https://www.youtube.com/embed/d4qDdf-fX60?rel=0&vq=hd1080" 
-                    frameborder="0" allowfullscreen>
-                <p>Your browser does not support iframes. You an access the videos 
-                    by clicking lime-technologies link above.</p>
-            </iframe>
-            <a href="https://www.youtube.com/embed/d4qDdf-fX60?rel=0&vq=hd1080" target=limebox>
-                See UNraids many features...</a>
-            <a href="https://www.youtube.com/embed/hmfJg9KifS8?rel=0&vq=hd1080" target=limebox>
-                Easy installation instruction for PC...</a>
-            <a href="https://www.youtube.com/embed/9q7DmsGAaFk?rel=0&vq=hd1080" target=limebox>
-                Easy installation instruction for MAC...</a>
-        </section>
-    </section>
-    <section id=future>        
+            <h3>Unraid offers more than basic storage, checkout it out the videos below:</h3>
+                <!--Show 3 videos: UNraid features, PC installation and MAC installation
+                Using the name/id/target with iframe, each link will display a separate video.
+                allowfullscreen as some of the text on the videos is to small to view
+                in default window size-->
+                <iframe width="640" height="360" name="limebox" id="limebox"
+                        src="https://www.youtube.com/embed/d4qDdf-fX60?rel=0&vq=hd1080" 
+                        allowfullscreen>
+                </iframe>
+                <a href="https://www.youtube.com/embed/d4qDdf-fX60?rel=0&vq=hd1080" target=limebox>
+                        See UNraids many features...</a>
+                <a href="https://www.youtube.com/embed/hmfJg9KifS8?rel=0&vq=hd1080" target=limebox>
+                    Easy installation instruction for PC...</a>
+                <a href="https://www.youtube.com/embed/9q7DmsGAaFk?rel=0&vq=hd1080" target=limebox>
+                    Easy installation instruction for MAC...</a>
+        </section> <!--end limevideos-->
+    </section> <!--end limetech-->
+    
+    <section id=futureenhancements>        
     <h3>Other future uses for my UNraid NAS:</h3>
         <ul>
             <li>Virtualize Win10 and CentOS linux box for general
@@ -69,7 +69,7 @@
             </li>
             <li>Virtualize a Win10 box with graphics card for PC gaming.</li>
         </ul>      
-    </section>    
+    </section> <!--end futureenhacements--> 
 
 
     <footer>
@@ -77,6 +77,7 @@
         <address>
             <p><a href="mailto:jchiodo@hawk.iit.edu">jchiodo@hawk.iit.edu</a></p>
         </address>
-    </footer>        
+    </footer>
+    
 </body>
-</html><!-- will hold hobbies, interests, and projects -->
+</html><!-- end hobbies.html -->

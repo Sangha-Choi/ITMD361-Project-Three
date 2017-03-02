@@ -177,6 +177,12 @@ ul.ALU_WE1 {
     margin: 10px;
 }
 
+ul.unraid_list {
+    list-style-type: circle;
+    color:#030303;
+    margin: 20px 2em;
+}
+
 #futureenhancements > h3 {
     background-color: #80dede;
     font-size: 1.25em;

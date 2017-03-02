@@ -168,13 +168,14 @@ ul.ALU_WE1 {
 #limetech {
     font-size: 1.25em;
     font-weight: 400;
-    font-family: Arial, sans-serif;
+    font-family: 'McLaren', cursive;
     background-color: #b9de80;
     color: #212f3d;
 }
 
 #limetechdes > p{
     margin: 10px;
+    font-family: 'McLaren', cursive;
 }
 
 ul.unraid_list {

@@ -58,8 +58,8 @@ html, body {
 	}
 
 div {
-    margin: 5px 5px 5px 5px;
-    padding: 1px 1px 1px 1px;
+    margin: .25%;
+    padding: .25%;
 }
 
 h1, h2, h3 { 
@@ -85,7 +85,7 @@ footer {
     background-color: #e3a859;
     color: black;
     border: 4px solid #4b361b;
-    width: 200px;
+    width: 20%;
     height: auto;
     padding: 3px;
     float:left;        
@@ -111,10 +111,10 @@ footer {
     box-sizing: border-box;
     background-color: #e3a859;
     color: black;
-    border: 4px solid #4b361b;
-    width: 200px;
+    border: .25em solid #4b361b;
+    width: 20%;
     height: auto;
-    padding: 3px;
+    padding: .25%;
     float:right;
         
  }
@@ -134,7 +134,7 @@ footer {
 
 /******* resume page styles ******/
 #ALU_name {
-    font-size: 18px;
+    font-size: 1em;
     font-weight: 400;
     font-family: Arial, sans-serif;
     background-color: lightgreen;
@@ -161,7 +161,7 @@ footer {
 ul.ALU_WE1 {
     list-style-type: circle;
     color:#030303;
-    margin: 20px 2em;
+    margin: .25% 2em;
 }
 
 /******* hobbies page styles ******/
@@ -174,14 +174,14 @@ ul.ALU_WE1 {
 }
 
 #limetechdes > p{
-    margin: 10px;
+    margin: .25%;
     font-family: 'McLaren', cursive;
 }
 
 ul.unraid_list {
     list-style-type: circle;
     color:#030303;
-    margin: 20px 2em;
+    margin: .25em 2em;
 }
 
 #futureenhancements > h3 {

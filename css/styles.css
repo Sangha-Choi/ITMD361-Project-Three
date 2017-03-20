@@ -1,6 +1,16 @@
 /******* Global styles ******/
 html, body {
-	background: #afa08c;
+	/*background: #afa08c;*/
+
+    
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c49366+0,f0c27b+31,144f89+100 */
+background: rgb(196,147,102); /* Old browsers */
+background: -moz-linear-gradient(-45deg,  rgba(196,147,102,1) 0%, rgba(240,194,123,1) 31%, rgba(20,79,137,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  rgba(196,147,102,1) 0%,rgba(240,194,123,1) 31%,rgba(20,79,137,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  rgba(196,147,102,1) 0%,rgba(240,194,123,1) 31%,rgba(20,79,137,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c49366', endColorstr='#144f89',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
     color: black;
     font-family: 'Roboto', sans-serif;
 	}
@@ -20,16 +30,92 @@ p {
     color: black
 }
 
+
+#homepagetitle {
+    font-family: 'Roboto', sans-serif;
+    background-color: antiquewhite;
+    color: #212f3d;
+}
+
+/* nav bar */
+
+#navbar ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+#navbar li {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: .3s background-color;
+}
+
+#navbar a:hover {
+   background-color: #144f89;
+}
+
+#navbar a.active {
+  background-color: #fff;
+  color: #444;
+    cursor: default;
+}
+
+@media screen and (min-width: 600px) {
+    #navbar li {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.2em;
+        line-height: 40px;
+        height: 40px;
+        width: 120px;
+        border-bottom: none;
+    }
+
+    #navbar li {
+        display: inline-block;
+        margin-right: -4px;
+    }
+
+
+/*    #navbar li {
+        float: left;
+    }
+    
+    #navbar ul {
+        overflow:auto;
+        width:360px;
+        margin: auto;
+    }
+*/    
+
+}
+
+
+
+
+
+
 /* footer styles */
 footer  {
     font-size: 1em;
-    background-color: #e3a859;
+   /* background-color: #e3a859;*/
     color: black;
-    border: .25em solid #5f5445;
+    border: .25em solid #888888;
     border-radius: 10px;
     padding:  .25% .5% ;
     word-wrap: break-word;
-    float:left;
+    float:right;
     transition: background-color 0.75s ease;
 }
 
@@ -51,11 +137,7 @@ address a {
 }
 
 
-#homepagetitle {
-    font-family: 'Roboto', sans-serif;
-    background-color: antiquewhite;
-    color: #212f3d;
-}
+
 
 
 #personalinfo {
@@ -90,7 +172,7 @@ address a {
     width: 180px;
     margin: 5px;
     padding: 5px;
-    background-color: #ED8029;
+    background-color: #F0C27B;
     text-align: right;
     border-radius: 15px;
     

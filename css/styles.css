@@ -37,6 +37,20 @@ p {
     color: #212f3d;
 }
 
+
+
+header h1 {
+    background-color: #774f2a; 
+    color: #fff;
+    height: auto;
+    text-align: center;
+    margin: 0;
+}
+
+header {
+    background-image: url(../images/coffee-beans.jpg);
+}
+
 /* nav bar */
 
 #navbar ul {

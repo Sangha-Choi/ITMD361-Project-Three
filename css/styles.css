@@ -1,18 +1,12 @@
 /******* Global styles ******/
 html, body {
 	/*background: #afa08c;*/
-
+    color: black;
+    font-family: 'Roboto', sans-serif;
     
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c49366+0,f0c27b+31,144f89+100 */
 background: rgb(196,147,102); /* Old browsers */
-background: -moz-linear-gradient(-45deg,  rgba(196,147,102,1) 0%, rgba(240,194,123,1) 31%, rgba(20,79,137,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg,  rgba(196,147,102,1) 0%,rgba(240,194,123,1) 31%,rgba(20,79,137,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg,  rgba(196,147,102,1) 0%,rgba(240,194,123,1) 31%,rgba(20,79,137,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c49366', endColorstr='#144f89',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
-
-    color: black;
-    font-family: 'Roboto', sans-serif;
+background: linear-gradient(-45deg,  rgba(196,147,102,1) 0%, rgba(240,194,123,1) 31%, rgba(20,79,137,1) 100%); /* FF3.6-15 */
 	}
 
 h1, h2, h3 { 
@@ -37,88 +31,76 @@ p {
     color: #212f3d;
 }
 
-
-
 header h1 {
-    background-color: #774f2a; 
+    /*background-color: #774f2a;*/ 
     color: #fff;
     height: auto;
     text-align: center;
     margin: 0;
 }
 
+/* just some pic for now */
 header {
     background-image: url(../images/coffee-beans.jpg);
 }
 
 /* nav bar */
 
-#navbar ul {
-  list-style: none;
-  background-color: #444;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-}
 
-#navbar li {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.2em;
-  line-height: 40px;
-  height: 40px;
-  border-bottom: 1px solid #888;
+#navbar{
+    font-family: 'Roboto', sans-serif; 
+    background:#c6c6b4; 
+    padding:10px 5px;
+    width:800px;
+    
 }
-
+	
+#navbar ul{
+    list-style-type:none; /*remove the bullet point from list */
+    text-align:center;
+}
+	
+#navbar ul li{
+    display:inline;
+    padding:0 20px;
+    font-size:1.1em;
+}
+	
 #navbar a {
-    text-decoration: none;
-    color: #fff;
-    display: block;
-    transition: .3s background-color;
+    color:#fff;
+    text-decoration:none; /*remove the underline from the links*/
+}
+	
+#navbar a {
+	letter-spacing:0.035em;
+	text-shadow: 0px -1px 0px #b1b1b1;
+	padding:5px 12px;
+	/*add a gradient to the background*/
+
+	background:#136caa; /*required for browsers that don't support gradients*/
+    /* gradual shift from upper left corner to lower right corner*/
+    background: linear-gradient(-45deg, #136caa, #4f98cb);
+    
+	/*add a curve to the corners of the button*/
+	border-radius:10px;
+	/*add a drop shadow to the button*/
+	box-shadow: rgba(93, 100, 106, .75) 0 1px 10px;
 }
 
-#navbar a:hover {
-   background-color: #144f89;
+#navbar a:hover, #navbar a:focus{
+	color:#e0e0d5;
+	text-shadow:none;
+	/*reduce the size of the box-shadow to give an impression of the button being pushed*/
+	box-shadow: rgba(93, 100, 106, .75) 0 0 2px;
 }
 
 #navbar a.active {
-  background-color: #fff;
-  color: #444;
+    background:#136caa;
+    color: #ddeaf4;
+    border: 3px solid red;
     cursor: default;
+    box-shadow: rgba(93, 100, 106, .75) 0 0 2px;
 }
-
-@media screen and (min-width: 600px) {
-    #navbar li {
-        font-family: 'Roboto', sans-serif;
-        font-size: 1.2em;
-        line-height: 40px;
-        height: 40px;
-        width: 120px;
-        border-bottom: none;
-    }
-
-    #navbar li {
-        display: inline-block;
-        margin-right: -4px;
-    }
-
-
-/*    #navbar li {
-        float: left;
-    }
-    
-    #navbar ul {
-        overflow:auto;
-        width:360px;
-        margin: auto;
-    }
-*/    
-
-}
-
-
-
-
-
 
 /* footer styles */
 footer  {
@@ -281,7 +263,3 @@ ul.unraid_list {
 #futureenhancements > ul > li {
     background-color: #61960f;
 }
-
-
-
-

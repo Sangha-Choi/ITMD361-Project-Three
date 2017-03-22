@@ -157,6 +157,7 @@ address a {
     margin: 0px;
 }
 
+/* using transition to slide out picture */
 #pbox {
     width: 180px;
     margin: 5px;
@@ -168,10 +169,10 @@ address a {
     position: relative;
     left: -180px;
     bottom: 0px;
-    
+    /* speed of slide */
     transition: 3s ease;
 }
-
+/* distance of the slide */
 #pbox:hover {
     width: 350px;
 }

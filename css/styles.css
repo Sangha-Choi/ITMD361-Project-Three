@@ -4,8 +4,9 @@ html, body {
     color: black;
     font-family: 'Roboto', sans-serif;
     
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c49366+0,f0c27b+31,144f89+100 */
-background: rgb(196,147,102); /* Old browsers */
+/* experimenting with backgroung gradient, not sure I will keep it */    
+/* http://colorzilla.com/gradient-editor/#c49366+0,f0c27b+31,144f89+100 */
+background: rgb(196,147,102);
 background: linear-gradient(-45deg,  rgba(196,147,102,1) 0%, rgba(240,194,123,1) 31%, rgba(20,79,137,1) 100%); /* FF3.6-15 */
 	}
 
@@ -24,7 +25,6 @@ p {
     color: black
 }
 
-
 #homepagetitle {
     font-family: 'Roboto', sans-serif;
     background-color: antiquewhite;
@@ -39,14 +39,12 @@ header h1 {
     margin: 0;
 }
 
-/* just some pic for now */
+/* just some placeholder pic for now */
 header {
     background-image: url(../images/coffee-beans.jpg);
 }
 
 /* nav bar */
-
-
 #navbar{
     font-family: 'Roboto', sans-serif; 
     background:#c6c6b4; 
@@ -76,7 +74,6 @@ header {
 	text-shadow: 0px -1px 0px #b1b1b1;
 	padding:5px 12px;
 	/*add a gradient to the background*/
-
 	background:#136caa; /*required for browsers that don't support gradients*/
     /* gradual shift from upper left corner to lower right corner*/
     background: linear-gradient(-45deg, #136caa, #4f98cb);
@@ -102,7 +99,7 @@ header {
     box-shadow: rgba(93, 100, 106, .75) 0 0 2px;
 }
 
-/* footer styles */
+/* footer style, some fun with transitions */
 footer  {
     font-size: 1em;
    /* background-color: #e3a859;*/
@@ -131,10 +128,6 @@ address a {
     font-style: italic;
     text-align: center;
 }
-
-
-
-
 
 #personalinfo {
     background-color: antiquewhite;
@@ -183,18 +176,6 @@ address a {
     width: 350px;
 }
 
-
-/*#pbox p{
-    font-size: 1em;
-    background-color: #e3a859;
-    color: black;
-    border: .25em solid #5f5445;
-    padding: .25%;
-    word-wrap: break-word;
-    float: left;
-        
- }
-*/
 #briefhistory {
     background-color: snow;
     width: 55%;
@@ -202,6 +183,7 @@ address a {
 }
 
 /******* resume page styles ******/
+/* this entire page will be boxes once I pick a layout */
 #ALU_name {
     font-size: 1em;
     font-weight: 400;
@@ -240,7 +222,7 @@ ul.ALU_WE1 {
     color: #212f3d;
 }
 
-#limetechdes > p{
+#limetechdes p{
     margin: .25%;
     font-family: 'McLaren', cursive;
 }
@@ -251,15 +233,15 @@ ul.unraid_list {
     margin: .25em 2em;
 }
 
-#futureenhancements > h3 {
+#futureenhancements h3 {
     background-color: #80dede;
     font-size: 1.25em;
 }
 
-#futureenhancements > ul {
+#futureenhancements ul {
     background-color: #b9de80;
 }
 
-#futureenhancements > ul > li {
+#futureenhancements ul li {
     background-color: #61960f;
 }

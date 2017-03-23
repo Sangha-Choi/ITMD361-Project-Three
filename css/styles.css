@@ -8,10 +8,14 @@ html, body {
 /* http://colorzilla.com/gradient-editor/#c49366+0,f0c27b+31,144f89+100 */
 background: rgb(196,147,102);
 background: linear-gradient(-45deg,  rgba(196,147,102,1) 0%, rgba(240,194,123,1) 31%, rgba(20,79,137,1) 100%); /* FF3.6-15 */
+    
 	}
 
 h1, h2, h3 { 
-    font-size: 1.25em;
+    font-size:1.1667em;
+	line-height: 1.286em;
+	margin-top: 1.286em;
+	margin-bottom: 1.286em; 
     font-weight: bold;
 }
 
@@ -19,8 +23,10 @@ h4, h5, h6 {
     font-size: 1em;
 }
 
-p {
-    font-size: 1em;
+p .ALU_WE1>ul {
+    font-size: em;
+    margin-top: 1.5em;
+	margin-bottom: 1.5em; 
     font-weight: normal;
     color: black
 }

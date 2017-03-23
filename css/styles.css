@@ -23,12 +23,9 @@ h4, h5, h6 {
     font-size: 1em;
 }
 
-p .ALU_WE1>ul {
-    font-size: em;
-    margin-top: 1.5em;
-	margin-bottom: 1.5em; 
-    font-weight: normal;
-    color: black
+span {
+    white-space: nowrap;
+    font-weight:bold;
 }
 
 #homepagetitle {
@@ -135,10 +132,7 @@ address a {
     text-align: center;
 }
 
-#personalinfo {
-    background-color: antiquewhite;
-    color: #212f3d;
-}
+
 
 .pic {    
     border-radius: 15px;
@@ -191,6 +185,150 @@ address a {
 
 /******* resume page styles ******/
 /* this entire page will be boxes once I pick a layout */
+
+
+#top {
+	padding: 15px 15px 15px 15px;
+	border-bottom: 2px solid #cf8a05;
+	background: #ededed;
+    font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+}
+
+
+#personalinfo {
+    background-color: antiquewhite;
+    color: #212f3d;
+}
+
+#personalInfo h1 {
+	font-size: 2.75em;
+	font-weight: 600;
+    margin-top: -1px;
+    margin-bottom: -38px;
+}
+
+#personalInfo h2 {
+	font-size: 2em;
+    font-weight: 400;
+	margin-left: 5px;
+    margin-bottom: -10px;
+}
+
+#personalInfo {
+	float: left;
+}
+
+#contactInfo ul {
+    font-family: 'Overpass Mono', Helvetica, Arial, sans-serif;
+    font-size: .8em;
+    line-height: 1.2em;
+    list-style-type: none;
+	float: right;
+}
+
+#contactInfo ul li:before {
+    content: "";
+    height: 4px;
+    width: 4px;
+	border-radius: 50%;
+	background: #cf8a05;
+	display: inline-block;
+	margin: 0 6px 0 0;
+    vertical-align: middle;
+}
+
+#bottom {
+    padding: 0px 30px;
+}
+
+#sectionTitle {
+	float: left;
+	width: 25%;
+}
+
+#sectionContent {
+	float: right;
+	width: 72.5%;
+}
+
+#skills {
+	border-bottom: 1px solid #dedede;
+	/*padding: 10px 0 0; */
+}
+
+#sectionTitle h1 {
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	font-style: italic;
+    font-weight: 400;    
+	font-size: 1.5em;
+    margin: 5px 0px 0px 0px;
+	color: #cf8a05;
+}
+
+#sectionContent ul {
+    list-style-type: none;
+    list-style-position: inside;
+    padding: 0px;
+    columns: 2;
+}
+
+#sectionContent ul li:before {
+    content: "";
+    height: 5px;
+    width: 5px;
+	border-radius: 50%;
+	background: #cf8a05;
+	display: inline-block;
+	margin: 0 6px 0 0;
+    vertical-align: middle;
+}
+
+#hclExp {
+	border-bottom: 1px solid #dedede;
+}
+
+#hclExp h1 {
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	font-style: italic;
+    font-weight: 400;
+	font-size: 1.5em;
+    margin: 5px 0px 0px 0px;
+	color: #cf8a05;
+    float:left;
+}
+
+#hclExp h2 {
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+ 	font-size: 1.5em;
+    font-weight: 400;
+    margin: 5px 0px 0px 0px;
+}
+
+.subTitle {
+	font-size: 1em;
+	font-style: italic;
+    margin: 3px 0px 0px 0px;
+}
+
+#hclList ul {
+    list-style-type: none;
+    list-style-position: inside;
+    padding: 0px;
+    columns: 1;
+}
+
+#hclList ul li:before {
+    content: "";
+    height: 5px;
+    width: 5px;
+	border-radius: 50%;
+	background: #cf8a05;
+	display: inline-block;
+	margin: 0 6px 0 0;
+    vertical-align: middle;
+}
+
+/*
 #ALU_name {
     font-size: 1em;
     font-weight: 400;
@@ -219,7 +357,7 @@ ul.ALU_WE1 {
     color:#030303;
     margin: .25% 2em;
 }
-
+*/
 /******* hobbies page styles ******/
 #limetech {
     font-size: 1.25em;

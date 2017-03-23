@@ -3,11 +3,14 @@
 <head>
 <meta charset="utf-8" />
     <title>Professional Resume</title>
+    <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass+Mono" rel="stylesheet"> 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="css/Normalize.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+    
     <header> <!--Navigation bar-->
         <h1>John Chiodo's Resume</h1>
         <nav id=navbar>
@@ -18,54 +21,74 @@
             </ul>
         </nav>
     </header>
-
-    <section id="personalinfo">
-        <h2>Personal Information</h2>
-         <p>John Chiodo</p>
-         <p>Aurora, IL. 60504</p>
-         <p>jchiodo5804@gmail.com</p>
-         <p>(630) 555-1212</p>
-         <p><a href="">Linkedin Page</a></p>
-    </section> <!--end personalinfo section-->
     
-    <section id="skillSummary">
-        <h2>Skill Summary</h2>
-        <ul> <!--Planning to this rework skill list in table like format with CSS-->
-            <li>Functional Requirements testing</li>
-            <li>Test Plans and Cases</li>
-            <li>Scripting and Documentation</li>
-            <li>Regression and Adversarial testing</li>
-            <li>Testing Automation</li>
-            <li>Hardware Development background</li>
-            <li>Performance/Load/Stress testing</li>
-            <li>Defect/Bug Tracking</li>
-            <li>Tool development</li>
-        </ul>
-	</section> <!--end skillsummary section-->
+<div id="resumeContainer">
+	<div id="top">
+	
+		<section id="personalInfo">
+			<h1>John Chiodo</h1>
+			<h2>Test Engineer</h2>
+		</section>
+	
+	
+		<section id="contactInfo">
+			<ul>
+				<li>e: <a href="mailto:jchiodo@hawk.iit.edu" target="_blank">jchiodo@hawk.iit.edu</a></li>
+				<li>w: <a href="https://jchiodo123.github.io/ITMD361-Project-Two/index.html">www.jchiodo.com</a></li>
+				<li>l: <a href="https://jchiodo123.github.io/ITMD361-Project-Two/index.html">Linkedin Page</a></li>
+				<li>m: (630) 555-1212</li>
+			</ul>
+		</section>	
+		
+		<div class="clear"></div>	
+	</div>
+    
+   <div id="bottom">
+      <section id="skills">
+        <div id="sectionTitle">
+            <h1>Skill Summary</h1>
+        </div>
+        
+        <div id="sectionContent">
+            <ul> 
+                <li>Functional Requirements testing</li>
+                <li>Regression and Adversarial testing</li>
+                <li>Performance/Load/Stress testing</li>
+                <li>Defect/Bug Tracking</li>
+                <li>Testing Automation</li>
+                <li>Test Plans and Cases</li>
+                <li>Scripting and Documentation</li>
+                <li>Hardware Dev. background</li>
+                <li>Tool development</li>
+            </ul>
+        </div>  
+        <div class="clear"></div>	   
+            
+       </section> <!--end skill section-->
 
     <!--Design idea here was to use <div></div> tags inside the main sections for fine tuning the 
     CSS tags placed in the document-->
     
-    <h1>Professional Experience</h1>
-    <section id=HCL>
-        <div id="HCL_name">
-            <h2>HCL America</h2>
-        </div>  
-        <div id="HCL_date">
-            <h3>EVDO Network Level Testing (NLT) – 2011-present</h3>
-        </div> 
-        <div id="HCL_workexp">
-            <ul>
-                <li>EVDO Call model Development – Developed, maintained and executed NLT 1xEV-DO call
-                loads testing using in-house call load generators to mimic customer field offices.
-                </li>
-                <li>Develop and test call models to utilize a scaled down model of the 
-                    customer’s site.</li>
-                <li>Analyze results and provide call load for testers on the team.</li>
-                <li>Maintain call load generators servers on virtual servers.</li>
-            </ul>
+     <section id="hclExp">
+        <div id="sectionTitle>">
+            <h1>Work Experience</h1>
         </div>
-    </section> <!--end HCL -->
+        <div id="sectionContent">
+            <h2>HCL America Inc.</h2>
+            <p class=subTitle>2014-2016</p>
+            <p><span>EVDO Call model Development Engineer</span> – Developed, maintained and executed NLT 1xEV-DO call loads testing using in-house call load generators to mimic customer field offices.</p>
+      
+        <div id="hclList">
+            <ul>
+                <li>Develop and test call models to utilize a scaled down model of the customer’s site.</li>
+                <li>Analyze results and provide call load for testers on the team.</li>
+                <li>Maintain call load generators servers on VMware based virtual servers.</li>
+            </ul>
+        </div>   
+        </div>
+        
+        <div class="clear"></div>	
+    </section> <!--end hclExp -->
     
     <section id="ALU">
         <div id="ALU_name">
@@ -190,7 +213,8 @@
                 <li>Many on job training courses covering quality and process.</li>  
             </ul>
     </section> <!--end education-->
-    
+   </div> <!--end bottom--> 
+    </div>
     <footer>
         <address>
             Created by John Chiodo<br>

@@ -186,6 +186,14 @@ address a {
 /******* resume page styles ******/
 /* this entire page will be boxes once I pick a layout */
 
+.clear {clear: both;}
+
+#resumeContainer {
+	width: 95%;
+	max-width: 900px;
+	background: #f3f3f3;
+	margin: 30px auto;
+}
 
 #top {
 	padding: 15px 15px 15px 15px;

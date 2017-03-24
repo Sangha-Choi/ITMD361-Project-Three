@@ -1,91 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8" />
-    <title>Education and Hobbies</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="css/Normalize.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=McLaren" rel="stylesheet"> 
+	<meta charset="utf-8" />
+	<title>Education and Hobbies</title>
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=McLaren" rel="stylesheet">
+	<link href="css/Normalize.css" rel="stylesheet" type="text/css">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+
 </head>
+
 <body>
-    <header> <!--Navigation bar-->
-        <h1>John Chiodo's Hobbies</h1>
-        <nav id=navbar>
-            <ul>
-                <li class="home"><a href="index.html">Home</a></li>
-                <li class="resume"><a href="resume.html">Resume</a></li>
-                <li class="hobbies"><a class="active" href="hobbies.html">Hobbies</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="limetech">
-        <h1>John Chiodo's Hobbies</h1>
-        <section id="limetechdes">
-        <p>
-            I like to build home PCs, my latest was a NAS 
-            <a href="https://en.wikipedia.org/wiki/Network-attached_storage" target="_blank"> 
-            (wiki: Network Attached Storage)</a>, which I am using to store media, 
-            PC backups, etc.
-        </p>
-        <p>
-            You can purchase a compeletly working NAS off the shelf, but what is the fun in that? 
-            There are many options if you want to make one yourself. I choose UNraid from 
-            <a href="https://lime-technology.com/" target="_blank"> lime-technologies</a>. 
-        </p>
-        <div id="unraid">
-            <h2>Main reasons I chose Unraid:</h2>
-            <ul class="unraid_list">
-                <li>Can run on older hardware.</li>
-                <li>Can expand easily with different size drives.</li>
-                <li>Supports single and dual parity protection.</li>
-                <li>Support virtualization and Docker containers.</li>
-            </ul>
-        </div>
-        </section>
-        <section id=limevideos>
-            <h3>Unraid offers more than basic storage, checkout it out theses 3 videos below:</h3>
-                <!--Show 3 videos: UNraid features, PC installation and MAC installation
+	<header>
+		<!--Navigation bar-->
+		<h1>John Chiodo's Hobbies</h1>
+		<nav id=navbar>
+			<ul>
+				<li class="home"><a href="index.html">Home</a></li>
+				<li class="resume"><a href="resume.html">Resume</a></li>
+				<li class="hobbies"><a class="active" href="hobbies.html">Hobbies</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section id="limetech">
+		<h1>John Chiodo's Hobbies</h1>
+		<section id="limetechdes">
+			<p>
+				I like to build home PCs, my latest was a NAS
+				<a href="https://en.wikipedia.org/wiki/Network-attached_storage" target="_blank"> 
+            (wiki: Network Attached Storage)</a>, which I am using to store media, PC backups, etc.
+			</p>
+			<p>
+				You can purchase a compeletly working NAS off the shelf, but what is the fun in that? There are many options if you want to make one yourself. I choose UNraid from
+				<a href="https://lime-technology.com/" target="_blank"> lime-technologies</a>.
+			</p>
+			<div id="unraid">
+				<h2>Main reasons I chose Unraid:</h2>
+				<ul class="unraid_list">
+					<li>Can run on older hardware.</li>
+					<li>Can expand easily with different size drives.</li>
+					<li>Supports single and dual parity protection.</li>
+					<li>Support virtualization and Docker containers.</li>
+				</ul>
+			</div>
+		</section>
+		<section id=limevideos>
+			<h3>Unraid offers more than basic storage, checkout it out theses 3 videos below:</h3>
+			<!--Show 3 videos: UNraid features, PC installation and MAC installation
                 Using the name/id/target with iframe, each link will display a separate video.
                 allowfullscreen as some of the text on the videos is to small to view
                 in default window size-->
-                <iframe width="640" height="360" name="limebox" id="limebox"
-                        src="https://www.youtube.com/embed/d4qDdf-fX60?rel=0&vq=hd1080" 
-                        allowfullscreen>
+			<iframe width="640" height="360" name="limebox" id="limebox" src="https://www.youtube.com/embed/d4qDdf-fX60?rel=0&vq=hd1080" allowfullscreen>
                 </iframe>
-                 <!--convert these to a list, maybe with buttons-->
-                <a href="https://www.youtube.com/embed/d4qDdf-fX60?rel=0&vq=hd1080" target=limebox>
+			<!--convert these to a list, maybe with buttons-->
+			<a href="https://www.youtube.com/embed/d4qDdf-fX60?rel=0&vq=hd1080" target=limebox>
                         See UNraids many features...</a>
-                <a href="https://www.youtube.com/embed/hmfJg9KifS8?rel=0&vq=hd1080" target=limebox>
+			<a href="https://www.youtube.com/embed/hmfJg9KifS8?rel=0&vq=hd1080" target=limebox>
                     Easy installation instruction for PC...</a>
-                <a href="https://www.youtube.com/embed/9q7DmsGAaFk?rel=0&vq=hd1080" target=limebox>
+			<a href="https://www.youtube.com/embed/9q7DmsGAaFk?rel=0&vq=hd1080" target=limebox>
                     Easy installation instruction for MAC...</a>
-        </section> <!--end limevideos-->
-    </section> <!--end limetech-->
-    
-    <section id=futureenhancements>        
-    <h3>Other future uses for my UNraid NAS:</h3>
-        <!--expand these with links to the unraid webpage or forum-->
-        <ul>
-            <li>Virtualize Win10 and CentOS linux box for general
-                websurfing, etc. 
-            </li>
-            <li>Virtualize a Plex Media Server so I can watch my 
-                media content on any network capable device in the 
-                house.
-            </li>
-            <li>Virtualize a Win10 box with graphics card for PC gaming.</li>
-        </ul>      
-    </section> <!--end futureenhacements--> 
+		</section>
+		<!--end limevideos-->
+	</section>
+	<!--end limetech-->
+
+	<section id=futureenhancements>
+		<h3>Other future uses for my UNraid NAS:</h3>
+		<!--expand these with links to the unraid webpage or forum-->
+		<ul>
+			<li>Virtualize Win10 and CentOS linux box for general websurfing, etc.
+			</li>
+			<li>Virtualize a Plex Media Server so I can watch my media content on any network capable device in the house.
+			</li>
+			<li>Virtualize a Win10 box with graphics card for PC gaming.</li>
+		</ul>
+	</section>
+	<!--end futureenhacements-->
 
 
-    <footer>
-        <address>
+	<footer>
+		<address>
             Created by John Chiodo<br>
             <a href="mailto:jchiodo@hawk.iit.edu">jchiodo@hawk.iit.edu</a>
         </address>
-    </footer> 
-    
+	</footer>
+
 </body>
-</html><!-- end hobbies.html -->
+
+</html>
+<!-- end hobbies.html -->

@@ -1,200 +1,234 @@
 /******* Global styles ******/
-html, body {
-	/*background: #afa08c;*/
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    
-/* experimenting with backgroung gradient, not sure I will keep it */    
-/* http://colorzilla.com/gradient-editor/#c49366+0,f0c27b+31,144f89+100 */
-background: rgb(196,147,102);
-background: linear-gradient(-45deg,  rgba(196,147,102,1) 0%, rgba(240,194,123,1) 31%, rgba(20,79,137,1) 100%); /* FF3.6-15 */
-    
-	}
 
-h1, h2, h3 { 
-    font-size:1.1667em;
+html,
+body {
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	/* experimenting with backgroung gradient, not sure I will keep it */
+	background: rgb(196, 147, 102);
+	background: linear-gradient(-45deg, rgba(196, 147, 102, 1) 0%, rgba(240, 194, 123, 1) 31%, rgba(20, 79, 137, 1) 100%);
+}
+
+h1,
+h2,
+h3 {
+	font-size: 1.1667em;
 	line-height: 1.286em;
 	margin-top: 1.286em;
-	margin-bottom: 1.286em; 
-    font-weight: bold;
+	margin-bottom: 1.286em;
+	font-weight: bold;
 }
 
-h4, h5, h6 { 
-    font-size: 1em;
-}
-
-a[href^="mailto:"] {
-    color: #136caa;
+h4,
+h5,
+h6 {
+	font-size: 1em;
 }
 
 a[href^="mailto:"] {
-    color: #136caa;
+	color: #136caa;
 }
+
+a[href^="mailto:"] {
+	color: #136caa;
+}
+
 span {
-    white-space: nowrap;
-    font-weight:bold;
-}
-
-#homepagetitle {
-    font-family: 'Roboto', sans-serif;
-    background-color: antiquewhite;
-    color: #212f3d;
+	white-space: nowrap;
+	font-weight: bold;
 }
 
 header h1 {
-    /*background-color: #774f2a;*/ 
-    color: #fff;
-    height: auto;
-    text-align: center;
-    margin: 0;
+	background-color: #136caa;
+	color: #e8dfd4;
+	height: auto;
+	text-align: center;
+	margin: 0;
 }
 
-/* just some placeholder pic for now */
-header {
-    background-image: url(../images/coffee-beans.jpg);
+#history {
+	float: left;
 }
 
-/* nav bar */
-#navbar{
-    font-family: 'Roboto', sans-serif; 
-    background:#c6c6b4; 
-    padding:10px 5px;
-    width:800px;
-    
+
+/* Home page styles */
+
+#personalInfoText h1 {
+	width: 100%;
+	text-align: center;
+	padding: 0;
+	font-size: 1.75em;
+	font-weight: 600;
 }
-	
-#navbar ul{
-    list-style-type:none; /*remove the bullet point from list */
-    text-align:center;
+
+#briefHistory {
+	background-color: snow;
+	border: 2px;
+	box-shadow: 6px 6px 6px 6px black;
+	width: 50%;
+	margin-left: 25%;
+	color: #212f3d;
 }
-	
-#navbar ul li{
-    display:inline;
-    padding:0 20px;
-    font-size:1.1em;
+
+#briefHistory h1 {
+	font-size: 1.1667em;
+	line-height: 1.286em;
+	margin: 1.286em;
+	margin-top: 1.4em;
 }
-	
+
+#briefHistory p {
+	font-size: 1.1667em;
+	line-height: 1.286em;
+	margin: 1.286em;
+}
+
+/******************/
+/* navigation bar */
+/******************/
+
+#navbar {
+	font-family: 'Roboto', sans-serif;
+	background: #b1b1b1;
+	padding: 10px 5px;
+	width: 100%;
+}
+
+#navbar ul {
+	list-style-type: none;
+	/*remove the bullet point from list */
+	text-align: center;
+}
+
+#navbar ul li {
+	display: inline;
+	padding: 0 20px;
+	font-size: 1.1em;
+}
+
 #navbar a {
-    color:#fff;
-    text-decoration:none; /*remove the underline from the links*/
+	color: #fff;
+	text-decoration: none;
+	/*remove the underline from the links*/
 }
-	
+
 #navbar a {
-	letter-spacing:0.035em;
+	letter-spacing: 0.035em;
 	text-shadow: 0px -1px 0px #b1b1b1;
-	padding:5px 12px;
+	padding: 5px 12px;
 	/*add a gradient to the background*/
-	background:#136caa; /*required for browsers that don't support gradients*/
-    /* gradual shift from upper left corner to lower right corner*/
-    background: linear-gradient(-45deg, #136caa, #4f98cb);
-    
+	background: #136caa;
+	/*required for browsers that don't support gradients*/
+	/* gradual shift from upper left corner to lower right corner*/
+	background: linear-gradient(-45deg, #136caa, #4f98cb);
 	/*add a curve to the corners of the button*/
-	border-radius:10px;
+	border-radius: 10px;
 	/*add a drop shadow to the button*/
 	box-shadow: rgba(93, 100, 106, .75) 0 1px 10px;
 }
 
-#navbar a:hover, #navbar a:focus{
-	color:#e0e0d5;
-	text-shadow:none;
+#navbar a:hover,
+#navbar a:focus {
+	color: #e0e0d5;
+	text-shadow: none;
 	/*reduce the size of the box-shadow to give an impression of the button being pushed*/
 	box-shadow: rgba(93, 100, 106, .75) 0 0 2px;
 }
 
 #navbar a.active {
-    background:#136caa;
-    color: #ddeaf4;
-    border: 3px solid red;
-    cursor: default;
-    box-shadow: rgba(93, 100, 106, .75) 0 0 2px;
+	background: #136caa;
+	color: #ddeaf4;
+	border: 3px solid #e8dfd4;
+	cursor: default;
+	box-shadow: rgba(93, 100, 106, .75) 0 0 2px;
 }
 
-/* footer style, some fun with transitions */
-footer  {
-    font-size: 1em;
-   /* background-color: #e3a859;*/
-    color: black;
-    border: .25em solid #888888;
-    border-radius: 10px;
-    padding:  .25% .5% ;
-    word-wrap: break-word;
-    float:right;
-    transition: background-color 0.75s ease;
-}
-
-footer:hover {
-  background-color: #e8dfd4;
-}
-
-/* footer->address styles */
-address {
-    color: black;
-    font-style: normal;
-}
-
-address a {
-    display: block;
-    color: black;
-    font-style: italic;
-    text-align: center;
-}
-
-
-
-.pic {    
-    border-radius: 15px;
+.pic {
+	border-radius: 15px;
 }
 
 #smpic {
-    padding: 0px 37px 0px 0px;
+	padding: 0px 37px 0px 0px;
 }
 
 #smtext p.name {
-    padding: 0px 37px 0px 0px;
-    margin: 0px;
+	padding: 0px 37px 0px 0px;
+	margin: 0px;
 }
 
 #smtext p.address {
-    padding: 0px 25px 0px 0px;
-    margin: 0px;
+	padding: 0px 25px 0px 0px;
+	margin: 0px;
 }
 
 #smtext p.email {
-    padding: 0px 13px 0px 0px; 
-    margin: 0px;
+	padding: 0px 13px 0px 0px;
+	margin: 0px;
 }
+
 
 /* using transition to slide out picture */
+
 #pbox {
-    width: 180px;
-    margin: 5px;
-    padding: 5px;
-    background-color: #F0C27B;
-    text-align: right;
-    border-radius: 15px;
-    
-    position: relative;
-    left: -180px;
-    bottom: 0px;
-    /* speed of slide */
-    transition: 3s ease;
-}
-/* distance of the slide */
-#pbox:hover {
-    width: 350px;
+	width: 180px;
+	margin: 5px;
+	padding: 5px;
+	background-color: #F0C27B;
+	text-align: right;
+	border-radius: 15px;
+	position: relative;
+	left: -180px;
+	bottom: 0px;
+	/* speed of slide */
+	transition: 3s ease;
 }
 
-#briefhistory {
-    background-color: snow;
-    width: 55%;
-    color: #212f3d;
+
+/* distance of the slide */
+
+#pbox:hover {
+	width: 350px;
+}
+
+
+
+/* footer style, some fun with transitions */
+
+footer {
+	font-size: 1em;
+	/* background-color: #e3a859;*/
+	color: black;
+	border: .25em solid #888888;
+	border-radius: 10px;
+	padding: .25% .5%;
+	word-wrap: break-word;
+	float: right;
+	transition: background-color 0.75s ease;
+}
+
+footer:hover {
+	background-color: #e8dfd4;
+}
+
+/* footer->address styles */
+
+address {
+	color: black;
+	font-style: normal;
+}
+
+address a {
+	display: block;
+	color: black;
+	font-style: italic;
+	text-align: center;
 }
 
 /******* resume page styles ******/
 
-.clear {clear: both;}
-
-
+.clear {
+	clear: both;
+}
 
 #resumeContainer {
 	width: 95%;
@@ -207,36 +241,37 @@ address a {
 	padding: 15px 15px 15px 15px;
 	border-bottom: 2px solid #cf8a05;
 	background: #ededed;
-    font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
 }
 
-#contactInfo ul li a:hover { 
+#contactInfo ul li a:hover {
 	color: #cf8a05;
 }
 
-#contactInfo ul li a, a[href^=tel] {
-	color: #136caa; 
+#contactInfo ul li a,
+a[href^=tel] {
+	color: #136caa;
 	text-decoration: none;
 	transition: all .3s ease-in;
 }
 
-#personalinfo {
-    background-color: antiquewhite;
-    color: #212f3d;
+#personalInfo {
+	background-color: antiquewhite;
+	color: #212f3d;
 }
 
 #personalInfo h1 {
 	font-size: 2.75em;
 	font-weight: 600;
-    margin-top: -1px;
-    margin-bottom: -38px;
+	margin-top: -1px;
+	margin-bottom: -38px;
 }
 
 #personalInfo h2 {
 	font-size: 2em;
-    font-weight: 400;
+	font-weight: 400;
 	margin-left: 5px;
-    margin-bottom: -10px;
+	margin-bottom: -10px;
 }
 
 #personalInfo {
@@ -244,26 +279,26 @@ address a {
 }
 
 #contactInfo ul {
-    font-family: 'Overpass Mono', Helvetica, Arial, sans-serif;
-    font-size: .8em;
-    line-height: 1.2em;
-    list-style-type: none;
+	font-family: 'Overpass Mono', Helvetica, Arial, sans-serif;
+	font-size: .8em;
+	line-height: 1.2em;
+	list-style-type: none;
 	float: right;
 }
 
 #contactInfo ul li:before {
-    content: "";
-    height: 4px;
-    width: 4px;
+	content: "";
+	height: 4px;
+	width: 4px;
 	border-radius: 50%;
 	background: #cf8a05;
 	display: inline-block;
 	margin: 0 6px 0 0;
-    vertical-align: middle;
+	vertical-align: middle;
 }
 
 #bottom {
-    padding: 0px 30px;
+	padding: 0px 30px;
 }
 
 #sectionTitle {
@@ -284,28 +319,28 @@ address a {
 #sectionTitle h1 {
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
 	font-style: italic;
-    font-weight: 400;    
+	font-weight: 400;
 	font-size: 1.5em;
-    margin: 5px 0px 0px 0px;
+	margin: 5px 0px 0px 0px;
 	color: #cf8a05;
 }
 
 #sectionContent ul {
-    list-style-type: none;
-    list-style-position: inside;
-    padding: 0px;
-    columns: 2;
+	list-style-type: none;
+	list-style-position: inside;
+	padding: 0px;
+	columns: 2;
 }
 
 #sectionContent ul li:before {
-    content: "";
-    height: 5px;
-    width: 5px;
+	content: "";
+	height: 5px;
+	width: 5px;
 	border-radius: 50%;
 	background: #cf8a05;
 	display: inline-block;
 	margin: 0 6px 0 0;
-    vertical-align: middle;
+	vertical-align: middle;
 }
 
 #hclExp {
@@ -315,41 +350,41 @@ address a {
 #hclExp h1 {
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
 	font-style: italic;
-    font-weight: 400;
+	font-weight: 400;
 	font-size: 1.5em;
-    margin: 5px 0px 0px 0px;
+	margin: 5px 0px 0px 0px;
 	color: #cf8a05;
-    float:left;
+	float: left;
 }
 
 #hclExp h2 {
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
- 	font-size: 1.5em;
-    font-weight: 400;
-    margin: 5px 0px 0px 0px;
+	font-size: 1.5em;
+	font-weight: 400;
+	margin: 5px 0px 0px 0px;
 }
 
 .subTitle {
 	font-size: 1em;
 	font-style: italic;
-    margin: 3px 0px 0px 0px;
+	margin: 3px 0px 0px 0px;
 }
 
 #hclList ul {
-    list-style-type: none;
-    list-style-position: inside;
-    columns: 1;
+	list-style-type: none;
+	list-style-position: inside;
+	columns: 1;
 }
 
 #hclList ul li:before {
-    content: "";
-    height: 5px;
-    width: 5px;
+	content: "";
+	height: 5px;
+	width: 5px;
 	border-radius: 50%;
 	background: #cf8a05;
 	display: inline-block;
 	margin: 0 6px 0 0;
-    vertical-align: middle;
+	vertical-align: middle;
 }
 
 #alu1 {
@@ -358,16 +393,9 @@ address a {
 
 #alu1 h2 {
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
- 	font-size: 1.5em;
-    font-weight: 400;
-    margin: 5px 0px 0px 0px;
-}
-
-#alu1 p {
-    font-size: 1em;
-	line-height: 1.286em;
-	margin-top: 1.286em;
-	margin-bottom: 1.286em; 
+	font-size: 1.5em;
+	font-weight: 400;
+	margin: 5px 0px 0px 0px;
 }
 
 #alu2 {
@@ -376,28 +404,28 @@ address a {
 
 #alu2 h2 {
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
- 	font-size: 1.5em;
-    font-weight: 400;
-    margin: 5px 0px 0px 0px;
+	font-size: 1.5em;
+	font-weight: 400;
+	margin: 5px 0px 0px 0px;
 }
 
 #aluList1 ul {
-    list-style-type: none;
-    list-style-position: inside;
-    padding: 0 0 0 10px;
-    text-indent: -1em;
-    columns: 1;
+	list-style-type: none;
+	list-style-position: inside;
+	padding: 0 0 0 10px;
+	text-indent: -1em;
+	columns: 1;
 }
 
 #aluList1 ul li:before {
-    content: "";
-    height: 5px;
-    width: 5px;
-    border-radius: 50%;
+	content: "";
+	height: 5px;
+	width: 5px;
+	border-radius: 50%;
 	background: #cf8a05;
 	display: inline-block;
 	margin: 0 6px 0 0;
-    vertical-align: middle;
+	vertical-align: middle;
 }
 
 #alu3 {
@@ -406,28 +434,28 @@ address a {
 
 #alu3 h2 {
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
- 	font-size: 1.5em;
-    font-weight: 400;
-    margin: 5px 0px 0px 0px;
+	font-size: 1.5em;
+	font-weight: 400;
+	margin: 5px 0px 0px 0px;
 }
 
 #aluList3 ul {
-    list-style-type: none;
-    list-style-position: inside;
-    padding: 0 0 0 10px;
-    text-indent: -1em;
-    columns: 1;
+	list-style-type: none;
+	list-style-position: inside;
+	padding: 0 0 0 10px;
+	text-indent: -1em;
+	columns: 1;
 }
 
 #aluList3 ul li:before {
-    content: "";
-    height: 5px;
-    width: 5px;
-    border-radius: 50%;
+	content: "";
+	height: 5px;
+	width: 5px;
+	border-radius: 50%;
 	background: #cf8a05;
 	display: inline-block;
 	margin: 0 6px 0 0;
-    vertical-align: middle;
+	vertical-align: middle;
 }
 
 #att {
@@ -436,89 +464,87 @@ address a {
 
 #att h2 {
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
- 	font-size: 1.5em;
-    font-weight: 400;
-    margin: 5px 0px 0px 0px;
+	font-size: 1.5em;
+	font-weight: 400;
+	margin: 5px 0px 0px 0px;
 }
 
 #attList ul {
-    list-style-type: none;
-    list-style-position: inside;
-    padding: 0 0 0 10px;
-    text-indent: -1em;
-    columns: 1;
+	list-style-type: none;
+	list-style-position: inside;
+	padding: 0 0 0 10px;
+	text-indent: -1em;
+	columns: 1;
 }
 
 #attList ul li:before {
-    content: "";
-    height: 5px;
-    width: 5px;
-    border-radius: 50%;
+	content: "";
+	height: 5px;
+	width: 5px;
+	border-radius: 50%;
 	background: #cf8a05;
 	display: inline-block;
 	margin: 0 6px 0 0;
-    vertical-align: middle;
+	vertical-align: middle;
 }
 
 #attList2 ul li:before {
 	background: #136caa;
 }
 
-
 #education {
 	border-bottom: 1px solid #dedede;
 }
 
 #edList ul {
-    list-style-type: none;
-    list-style-position: inside;
-    padding: 0 0 0 10px;
-    text-indent: .5em;
-    columns: 1;
+	list-style-type: none;
+	list-style-position: inside;
+	padding: 0 0 0 10px;
+	text-indent: .5em;
+	columns: 1;
 }
 
 #edList ul li:before {
-    content: "";
-    height: 5px;
-    width: 5px;
-    border-radius: 50%;
+	content: "";
+	height: 5px;
+	width: 5px;
+	border-radius: 50%;
 	background: #cf8a05;
 	display: inline-block;
 	margin: 0 6px 0 0;
-    vertical-align: middle;
+	vertical-align: middle;
 }
 
-
-*/
 /******* hobbies page styles ******/
+
 #limetech {
-    font-size: 1.25em;
-    font-weight: 400;
-    font-family: 'McLaren', cursive;
-    background-color: #b9de80;
-    color: #212f3d;
+	font-size: 1.25em;
+	font-weight: 400;
+	font-family: 'McLaren', cursive;
+	background-color: #b9de80;
+	color: #212f3d;
 }
 
-#limetechdes p{
-    margin: .25%;
-    font-family: 'McLaren', cursive;
+#limetechdes p {
+	margin: .25%;
+	font-family: 'McLaren', cursive;
 }
 
 ul.unraid_list {
-    list-style-type: circle;
-    color:#030303;
-    margin: .25em 2em;
+	list-style-type: circle;
+	color: #030303;
+	margin: .25em 2em;
 }
 
 #futureenhancements h3 {
-    background-color: #80dede;
-    font-size: 1.25em;
+	background-color: #80dede;
+	font-size: 1.25em;
 }
 
 #futureenhancements ul {
-    background-color: #b9de80;
+	background-color: #b9de80;
 }
 
 #futureenhancements ul li {
-    background-color: #61960f;
+	background-color: #61960f;
 }

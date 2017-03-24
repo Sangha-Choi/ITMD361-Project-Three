@@ -1,76 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <title>Professional Web Presence</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto">
-    <link href="css/Normalize.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    
-</head>	
-<body>
-    <header> <!--Navigation bar-->
-        <h1>John Chiodo's HomePage</h1>
-        <nav id="navbar">
-            <ul>
-                <li class="home"><a class="active" href="Index.html">Home</a></li>
-                <li class="resume"><a href="resume.html">Resume</a></li>
-                <li class="hobbies"><a href="hobbies.html">Hobbies</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="personalpic">
-        <h2>Personal Picture</h2>
-        <img class="pic" src="images/placeholder.jpg" alt="John Chiodo placeholder image" width="182" height="222">
-    </section>
-  
-    <section id="personalinfo">
-        <h1>Personal Info</h1>
-        <div id="pbox">
-            <div id="smpic">
-                <img src="images/placeholder.jpg" alt="John Chiodo placeholder image" width="102" height="122">
-            </div>
-            
-            <div id="smtext">
-                <p class="name">John Chiodo</p>
-                <p class="address">Aurora, IL. 60504</p>
-                <p class="email">jchiodo@hawk.iit.edu</p>
-            </div>
 
-        </div>
-   </section>
-      
-    <section id="briefhistory">
-        <h1>Brief Work History:</h1>
-            <p>
-                Hello, my name is John Chiodo, I started my career in telecommunications with 
-                AT&amp;T in 1987, the company went thru many changes and so did my skill set. I 
-                originally came from a hardware backround and a few of my early positions
-                at AT&amp;T were hardware design related. 
-            </p>
-            <p>
-                Thoughout the years I shifted my skills to programming in assembly and C. I
-                found an opening in the wireless division and soon realized there was a void in 
-                the testing area. I applied my skills to unit level and cluster/network level testing.
-            </p>
-            <p>    
-                I have worked with many different cell types, servers and cellular protocols
-                mobile phones and networks.
-            </p>
-            <p>
-                Thanks for visiting my site, please feel free to browse my resume or check out my 
-                latest home hobby.
-            </p>
-    </section>
-    
-    <footer>
-        <address>
+<head>
+	<meta charset="utf-8" />
+	<title>Professional Web Presence</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="css/Normalize.css" rel="stylesheet" type="text/css">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+	<header>
+		<!--Navigation bar-->
+		<h1>John Chiodo's HomePage</h1>
+		<nav id="navbar">
+			<ul>
+				<li class="home"><a class="active" href="Index.html">Home</a></li>
+				<li class="resume"><a href="resume.html">Resume</a></li>
+				<li class="hobbies"><a href="hobbies.html">Hobbies</a></li>
+			</ul>
+		</nav>
+	</header>
+ 
+  <div id="homeWrapper">
+	<section id="personalInfoText">
+		<div id="personal">
+			<h1>Personal Info Slider Box</h1>
+		</div>
+		<div id="pbox">
+			<div id="smpic">
+				<img src="images/placeholder.jpg" alt="John Chiodo placeholder image" width="102" height="122">
+			</div>
+
+			<div id="smtext">
+				<p class="name">John Chiodo</p>
+				<p class="address">Aurora, IL. 60504</p>
+				<p class="email">jchiodo@hawk.iit.edu</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="history">
+		<div id=briefHistory>
+			<h1>Brief Work History:</h1>
+			<p>
+				Hello, my name is John Chiodo, I started my career in telecommunications with AT&amp;T in 1987, the company went thru many changes and so did my skill set. I originally came from a hardware backround and a few of my early positions at AT&amp;T were hardware design related.
+			</p>
+			<p>
+				Thoughout the years I shifted my skills to programming in assembly and C. I found an opening in the wireless division and soon realized there was a void in the testing area. I applied my skills to unit level and cluster/network level testing.
+			</p>
+			<p>
+				I have worked with many different cell types, servers and cellular protocols mobile phones and networks.
+			</p>
+			<p>
+				Thanks for visiting my site, please feel free to browse my resume or check out my latest home hobby.
+			</p>
+		</div>
+		<div class="clear"></div>
+	</section>
+
+	<footer>
+		<address>
             Created by John Chiodo
             <a href="mailto:jchiodo@hawk.iit.edu">jchiodo@hawk.iit.edu</a>
         </address>
-    </footer>    
-    
+	</footer>
+ </div>
 </body>
+
 </html>

@@ -23,6 +23,13 @@ h4, h5, h6 {
     font-size: 1em;
 }
 
+a[href^="mailto:"] {
+    color: #136caa;
+}
+
+a[href^="mailto:"] {
+    color: #136caa;
+}
 span {
     white-space: nowrap;
     font-weight:bold;
@@ -184,9 +191,10 @@ address a {
 }
 
 /******* resume page styles ******/
-/* this entire page will be boxes once I pick a layout */
 
 .clear {clear: both;}
+
+
 
 #resumeContainer {
 	width: 95%;
@@ -202,6 +210,15 @@ address a {
     font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
 }
 
+#contactInfo ul li a:hover { 
+	color: #cf8a05;
+}
+
+#contactInfo ul li a, a[href^=tel] {
+	color: #136caa; 
+	text-decoration: none;
+	transition: all .3s ease-in;
+}
 
 #personalinfo {
     background-color: antiquewhite;
@@ -321,7 +338,6 @@ address a {
 #hclList ul {
     list-style-type: none;
     list-style-position: inside;
-    padding: 0px;
     columns: 1;
 }
 
@@ -336,35 +352,143 @@ address a {
     vertical-align: middle;
 }
 
-/*
-#ALU_name {
-    font-size: 1em;
-    font-weight: 400;
-    background-color: lightgreen;
-    color: #212f3d;
+#alu1 {
+	border-bottom: 1px solid #dedede;
 }
 
-#ALU_date1 > h3 {
-    font-size: 1em;
+#alu1 h2 {
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+ 	font-size: 1.5em;
     font-weight: 400;
-    font-family: Arial, sans-serif;
-    background-color: lightblue;
-    color: #212f3d;
+    margin: 5px 0px 0px 0px;
 }
 
-#ALU_workexp1 {
+#alu1 p {
     font-size: 1em;
-    font-weight: 400;
-    background-color: #c1c1c1;
-    color: #212f3d;
-    list-style-type: square;
+	line-height: 1.286em;
+	margin-top: 1.286em;
+	margin-bottom: 1.286em; 
 }
 
-ul.ALU_WE1 {
-    list-style-type: circle;
-    color:#030303;
-    margin: .25% 2em;
+#alu2 {
+	border-bottom: 1px solid #dedede;
 }
+
+#alu2 h2 {
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+ 	font-size: 1.5em;
+    font-weight: 400;
+    margin: 5px 0px 0px 0px;
+}
+
+#aluList1 ul {
+    list-style-type: none;
+    list-style-position: inside;
+    padding: 0 0 0 10px;
+    text-indent: -1em;
+    columns: 1;
+}
+
+#aluList1 ul li:before {
+    content: "";
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+	background: #cf8a05;
+	display: inline-block;
+	margin: 0 6px 0 0;
+    vertical-align: middle;
+}
+
+#alu3 {
+	border-bottom: 1px solid #dedede;
+}
+
+#alu3 h2 {
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+ 	font-size: 1.5em;
+    font-weight: 400;
+    margin: 5px 0px 0px 0px;
+}
+
+#aluList3 ul {
+    list-style-type: none;
+    list-style-position: inside;
+    padding: 0 0 0 10px;
+    text-indent: -1em;
+    columns: 1;
+}
+
+#aluList3 ul li:before {
+    content: "";
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+	background: #cf8a05;
+	display: inline-block;
+	margin: 0 6px 0 0;
+    vertical-align: middle;
+}
+
+#att {
+	border-bottom: 1px solid #dedede;
+}
+
+#att h2 {
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+ 	font-size: 1.5em;
+    font-weight: 400;
+    margin: 5px 0px 0px 0px;
+}
+
+#attList ul {
+    list-style-type: none;
+    list-style-position: inside;
+    padding: 0 0 0 10px;
+    text-indent: -1em;
+    columns: 1;
+}
+
+#attList ul li:before {
+    content: "";
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+	background: #cf8a05;
+	display: inline-block;
+	margin: 0 6px 0 0;
+    vertical-align: middle;
+}
+
+#attList2 ul li:before {
+	background: #136caa;
+}
+
+
+#education {
+	border-bottom: 1px solid #dedede;
+}
+
+#edList ul {
+    list-style-type: none;
+    list-style-position: inside;
+    padding: 0 0 0 10px;
+    text-indent: .5em;
+    columns: 1;
+}
+
+#edList ul li:before {
+    content: "";
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+	background: #cf8a05;
+	display: inline-block;
+	margin: 0 6px 0 0;
+    vertical-align: middle;
+}
+
+
 */
 /******* hobbies page styles ******/
 #limetech {

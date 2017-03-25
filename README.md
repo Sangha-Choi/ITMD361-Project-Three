@@ -7,7 +7,7 @@ three different style elements to each of your pages.
 Files added:
 css/styles.css - Main CSS style page for website.
 
-3/24 - added: navigation buttons, google fonts, css reset, finished
+3/22 - added: navigation buttons, google fonts, css reset, finished
 resume page, gradient background, sliding effect on picture. Lots of
 CSS and HTML cleanup and documentation.
 --------------------------------------------------------------------

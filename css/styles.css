@@ -1,12 +1,16 @@
 /******* Global styles ******/
 
-html,
+html {
+	height: 100%;
+}
+
 body {
 	color: black;
 	font-family: 'Roboto', sans-serif;
-	/* experimenting with backgroung gradient, not sure I will keep it */
-	background: rgb(196, 147, 102);
-	background: linear-gradient(-45deg, rgba(196, 147, 102, 1) 0%, rgba(240, 194, 123, 1) 31%, rgba(20, 79, 137, 1) 100%);
+	/* experimenting with backgroung gradient */
+	/* 3 color points to shift from upper left to bottom right */
+	/*light to dark */
+	background: linear-gradient(-45deg, #144f89 0%, #e2ceb0 31%, #c49366 100%);
 }
 
 h1,
@@ -36,6 +40,11 @@ a[href^="mailto:"] {
 span {
 	white-space: nowrap;
 	font-weight: bold;
+}
+
+#homeWrapper {
+	width: 100%;
+	
 }
 
 header h1 {
@@ -108,8 +117,9 @@ header h1 {
 
 #navbar a {
 	color: #fff;
+ /*remove the underline from the links*/
 	text-decoration: none;
-	/*remove the underline from the links*/
+	
 }
 
 #navbar a {
@@ -118,21 +128,21 @@ header h1 {
 	padding: 5px 12px;
 	/*add a gradient to the background*/
 	background: #136caa;
-	/*required for browsers that don't support gradients*/
 	/* gradual shift from upper left corner to lower right corner*/
 	background: linear-gradient(-45deg, #136caa, #4f98cb);
 	/*add a curve to the corners of the button*/
 	border-radius: 10px;
 	/*add a drop shadow to the button*/
-	box-shadow: rgba(93, 100, 106, .75) 0 1px 10px;
+	box-shadow: #5d646a 0 1px 10px;
 }
 
 #navbar a:hover,
 #navbar a:focus {
 	color: #e0e0d5;
 	text-shadow: none;
-	/*reduce the size of the box-shadow to give an impression of the button being pushed*/
-	box-shadow: rgba(93, 100, 106, .75) 0 0 2px;
+	/* reduce the size of the box-shadow to give an */
+  /* impression of the button being pushed */
+	box-shadow: #5d646a 0 0 2px;
 }
 
 #navbar a.active {
@@ -140,7 +150,7 @@ header h1 {
 	color: #ddeaf4;
 	border: 3px solid #e8dfd4;
 	cursor: default;
-	box-shadow: rgba(93, 100, 106, .75) 0 0 2px;
+	box-shadow: #5d646a 0 0 2px;
 }
 
 .pic {
@@ -173,9 +183,11 @@ header h1 {
 	width: 180px;
 	margin: 5px;
 	padding: 5px;
-	background-color: #F0C27B;
+	background-color: #efd6b1;
 	text-align: right;
 	border-radius: 15px;
+	border-color: #144f89;
+	border-width: 5px;
 	position: relative;
 	left: -180px;
 	bottom: 0px;
@@ -191,18 +203,20 @@ header h1 {
 }
 
 
-
+/*******************************************/
 /* footer style, some fun with transitions */
+/*******************************************/
 
 footer {
 	font-size: 1em;
-	/* background-color: #e3a859;*/
+	background-color: #4f98cb;
 	color: black;
-	border: .25em solid #888888;
+	border: .25em solid black;
 	border-radius: 10px;
 	padding: .25% .5%;
 	word-wrap: break-word;
 	float: right;
+	box-shadow: 6px 6px 6px 6px black;
 	transition: background-color 0.75s ease;
 }
 
@@ -217,7 +231,7 @@ address {
 	font-style: normal;
 }
 
-address a {
+address a[href^="mailto:"] {
 	display: block;
 	color: black;
 	font-style: italic;
@@ -253,11 +267,6 @@ a[href^=tel] {
 	color: #136caa;
 	text-decoration: none;
 	transition: all .3s ease-in;
-}
-
-#personalInfo {
-	background-color: antiquewhite;
-	color: #212f3d;
 }
 
 #personalInfo h1 {

@@ -1,7 +1,7 @@
 /******* Global styles ******/
 
 html {
-	height: 100%;
+	background-size: cover;
 }
 
 body {
@@ -214,6 +214,7 @@ footer {
 	border: .25em solid black;
 	border-radius: 10px;
 	padding: .25% .5%;
+	margin: 2% 3%;
 	word-wrap: break-word;
 	float: right;
 	box-shadow: 6px 6px 6px 6px black;
@@ -545,15 +546,24 @@ ul.unraid_list {
 	margin: .25em 2em;
 }
 
-#futureenhancements h3 {
+#limevideos {
+	width: 85%;
+}
+
+#limevideos ul {
+	padding: 20px 5px;
+}
+
+#futureEnhcanements {
+	font-size: 1.25em;
+	font-weight: 400;
+	font-family: 'McLaren', cursive;
+	background-color: #b9de80;
+	color: #212f3d
+}
+
+#futureEnhancements h3 {
 	background-color: #80dede;
 	font-size: 1.25em;
 }
 
-#futureenhancements ul {
-	background-color: #b9de80;
-}
-
-#futureenhancements ul li {
-	background-color: #61960f;
-}

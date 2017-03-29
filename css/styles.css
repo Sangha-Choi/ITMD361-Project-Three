@@ -44,7 +44,9 @@ span {
 
 #homeWrapper {
 	width: 100%;
-	
+}
+section {
+	display:block;
 }
 
 header h1 {
@@ -59,10 +61,9 @@ header h1 {
 	float: left;
 }
 
-
 /* Home page styles */
 
-#personalInfoText h1 {
+#personal p {
 	width: 100%;
 	text-align: center;
 	padding: 0;
@@ -79,7 +80,7 @@ header h1 {
 	color: #212f3d;
 }
 
-#briefHistory h1 {
+#briefHistory h2 {
 	font-size: 1.1667em;
 	line-height: 1.286em;
 	margin: 1.286em;
@@ -270,14 +271,15 @@ a[href^=tel] {
 	transition: all .3s ease-in;
 }
 
-#personalInfo h1 {
+#personalInfo h1,
+#personalInfo h2 {
 	font-size: 2.75em;
 	font-weight: 600;
 	margin-top: -1px;
 	margin-bottom: -38px;
 }
 
-#personalInfo h2 {
+#personalInfo h3 {
 	font-size: 2em;
 	font-weight: 400;
 	margin-left: 5px;
@@ -307,6 +309,7 @@ a[href^=tel] {
 	vertical-align: middle;
 }
 
+
 #bottom {
 	padding: 0px 30px;
 }
@@ -316,42 +319,81 @@ a[href^=tel] {
 	width: 25%;
 }
 
-#sectionContent {
+.sectionContent {
 	float: right;
 	width: 72.5%;
 }
+
+.sectionContent2 {
+	float: right;
+	width: 72.5%;
+}
+
 
 #skills {
 	border-bottom: 1px solid #dedede;
 	/*padding: 10px 0 0; */
 }
 
-#sectionTitle h1 {
+.sectionTitle h1,
+.sectionTitle h2,
+.sectionTitle h3
+{
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
 	font-style: italic;
 	font-weight: 400;
 	font-size: 1.5em;
+	display:inline-block;
 	margin: 5px 0px 0px 0px;
 	color: #cf8a05;
 }
 
-#sectionContent ul {
+#hclExp {
+	border-bottom: 1px solid #dedede;
+	/*padding: 10px 0 0; */
+}
+
+.sectionContent ul {
 	list-style-type: none;
 	list-style-position: inside;
+	display: inline-block;
+	vertical-align: middle;
 	padding: 0px;
 	columns: 2;
 }
 
-#sectionContent ul li:before {
+.sectionContent ul li:before {
 	content: "";
 	height: 5px;
 	width: 5px;
 	border-radius: 50%;
 	background: #cf8a05;
 	display: inline-block;
+	text-align: right;
 	margin: 0 6px 0 0;
-	vertical-align: middle;
 }
+
+.sectionContent2 ul {
+	list-style-type: none;
+	list-style-position: inside;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0px;
+}
+
+.sectionContent2 ul li:before {
+	content: "";
+	height: 5px;
+	width: 5px;
+	border-radius: 50%;
+	background: #cf8a05;
+	display: inline-block;
+	text-align: right;
+	margin: 0 6px 0 0;
+}
+
+
+
 
 #hclExp {
 	border-bottom: 1px solid #dedede;
@@ -364,7 +406,6 @@ a[href^=tel] {
 	font-size: 1.5em;
 	margin: 5px 0px 0px 0px;
 	color: #cf8a05;
-	float: left;
 }
 
 #hclExp h2 {
@@ -498,7 +539,7 @@ a[href^=tel] {
 	vertical-align: middle;
 }
 
-#attList2 ul li:before {
+#attList ul li:before {
 	background: #136caa;
 }
 

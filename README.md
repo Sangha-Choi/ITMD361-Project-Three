@@ -7,7 +7,6 @@ Due by April 26, 2017
 2. Work with an open API, learning how to hit its endpoints in response to user input
 
 ## Deliverables & Milestones
-
 1. Polish up your CSS based on feedback recieved from the professor. Create a Basecamp post that includes a world-viewable URL of your project, in addition to the URL to your GitHub repository. Include in the text of your post one or two things you would like feedback on from the instructor and other students in the class (due by April 05, 2017).
 2. Substantive comments reveiwing and helping with at least three other student projects. (due by April 12, 2017)
 3. Final update to your Basecamp post with the following: (due by April 26, 2017):
@@ -16,6 +15,15 @@ Due by April 26, 2017
   3. The https:// link to your individual GitHub repository
   4. The https:// link to your group’s shared GitHub repository
 
+## Requirements
+
+* Valid, well-formed HTML5 and standards-compliant CSS and JavaScript
+* One valid, error-free CSS file with your orginal code; and one file containing the css reset code you used.
+* JavaScript that throws no uncaught errors and is loaded unobtrusively
+* HTML-based fallbacks for any media elements (image, audio, video) that you include
+* Organized, readable source that is hand-written and original (no WYSIWYGs or code-generators, no Bootstrap or other off-the-shelf frameworks)
+ * A personal Git repository with frequent commits and meaningful commit messages that accurately reflect each set of changes that you make
+* GitHub repository must contain only the files and commits from this project
 
 -------------------------------------------------------------------
 

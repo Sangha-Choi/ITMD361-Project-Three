@@ -1,3 +1,24 @@
+# ITMD361---Project-Three
+Third project for ITMD 361  Fundamentals of Web Development class.
+Due by April 26, 2017
+
+## Project Goals
+1. Understand and execute JavaScript
+2. Work with an open API, learning how to hit its endpoints in response to user input
+
+## Deliverables & Milestones
+
+1. Polish up your CSS based on feedback recieved from the professor. Create a Basecamp post that includes a world-viewable URL of your project, in addition to the URL to your GitHub repository. Include in the text of your post one or two things you would like feedback on from the instructor and other students in the class (due by April 05, 2017).
+2. Substantive comments reveiwing and helping with at least three other student projects. (due by April 12, 2017)
+3. Final update to your Basecamp post with the following: (due by April 26, 2017):
+  1. Javascript: Iclusion of either a google maps api utilizing at least three javascript features, or a javscript based rotating picture display.
+  2. A 5-8 sentence self-critique memo of your project and your progress in class this semester
+  3. The https:// link to your individual GitHub repository
+  4. The https:// link to your group’s shared GitHub repository
+
+
+-------------------------------------------------------------------
+
 # ITMD361---Project-Two
 Second Project for ITMD 361 Fundamentals of Web Development class.
 

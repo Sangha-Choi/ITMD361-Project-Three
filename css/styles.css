@@ -93,9 +93,10 @@ header h1 {
 	margin: 1.286em;
 }
 
-/******************/
-/* navigation bar */
-/******************/
+/*********************************************/
+/* navigation bar forscreen size below 600px */
+/* the buttons will stack verically          */
+/*********************************************/
 
 #navbar {
 	font-family: 'Roboto', sans-serif;
@@ -111,16 +112,15 @@ header h1 {
 }
 
 #navbar ul li {
-	display: inline;
-	padding: 0 20px;
-	font-size: 1.1em;
+  padding: 15px 20px;
+  font-size: 1.5em;
+  border-color: #fff0f0;
 }
 
 #navbar a {
 	color: #fff;
  /*remove the underline from the links*/
 	text-decoration: none;
-	
 }
 
 #navbar a {
@@ -128,7 +128,7 @@ header h1 {
 	text-shadow: 0px -1px 0px #b1b1b1;
 	padding: 5px 12px;
 	/*add a gradient to the background*/
-	background: #136caa;
+	/*background: #136caa;*/
 	/* gradual shift from upper left corner to lower right corner*/
 	background: linear-gradient(-45deg, #136caa, #4f98cb);
 	/*add a curve to the corners of the button*/
@@ -154,6 +154,38 @@ header h1 {
 	box-shadow: #5d646a 0 0 2px;
 }
 
+/***************************************/
+/* navbar for screen size above 600px  */
+/* the buttons will stack horizontally */
+/***************************************/
+
+@media screen and (min-width: 600px) {
+  #navbar ul li {
+    display: inline;
+    padding: 20px 40px;
+    font-size: 1.2em;
+  }
+  #navbar a.active {
+    background: #136caa;
+    color: #ddeaf4;
+    border: 3px solid #e8dfd4;
+    cursor: default;
+    box-shadow: #5d646a 0 0 2px;
+  }
+  #navbar a {
+    letter-spacing: 0.035em;
+    text-shadow: 0px -1px 0px #b1b1b1;
+    padding: 5px 12px;
+    /*add a gradient to the background*/
+    /* background: #136caa;*/
+    /* gradual shift from upper left corner to lower right corner*/
+    background: linear-gradient(-45deg, #136caa, #4f98cb);
+    /*add a curve to the corners of the button*/
+    border-radius: 10px;
+    /*add a drop shadow to the button*/
+    box-shadow: #5d646a 0 1px 10px;
+  }
+}
 .pic {
 	border-radius: 15px;
 }
@@ -195,7 +227,6 @@ header h1 {
 	/* speed of slide */
 	transition: 3s ease;
 }
-
 
 /* distance of the slide */
 
